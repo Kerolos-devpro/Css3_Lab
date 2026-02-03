@@ -1,0 +1,101 @@
+.title {
+  text-align: center;
+  background-color: green;
+  width: 300px;
+  transform: rotate(-90deg);
+
+  h1 {
+    padding: 10px 0;
+  }
+  /* transition: 2s all; */
+}
+
+/* div:hover{
+  transform: rotate(90deg);
+} */
+
+.image {
+  width: 90%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
+
+  img {
+    width: 300px;
+    height: 300px;
+    border: 2px solid red;
+    transition: all 2s;
+
+    img:hover {
+      transform: scale(1.1, 1.1);
+      border: 5px solid lightblue;
+    }
+  }
+}
+
+.img-3 {
+  margin-left: 35px;
+  margin-right: 35px;
+}
+
+.img-2 {
+  margin-left: 35px;
+}
+
+.texts {
+  margin-top: 150px;
+
+  p {
+    columns: 3;
+    text-align: justify;
+    column-gap: 30px;
+  }
+}
+
+.car-image {
+  width: 300px;
+  height: 300px;
+  /* transition: all 5s; */
+  position: absolute;
+  animation: carMovement 3s linear forwards; /* infinite if we want*/
+  
+}
+
+@keyframes carMovement {
+  0% {
+    top: 0px;
+    left: 0px;
+  }
+  12.5% {
+    top: 0px;
+    left: 150px;
+  }
+  25% {
+    top: 0px;
+    left: 300px;
+  }
+  37.5% {
+    top: 0px;
+    left: 450px;
+  }
+  50% {
+    top: 0px;
+    left: 600px;
+  }
+  62.5% {
+    top: 0px;
+    left: 750px;
+  }
+  75% {
+    top: 0px;
+    left: 900px;
+  }
+  87.5%{
+    top: 0px;
+    left: 1050px;
+  }
+  100% {
+    top: 0px;
+    left: 1200px;
+  }
+}
